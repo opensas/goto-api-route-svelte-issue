@@ -2,6 +2,8 @@
 	import { goto } from "$app/navigation";
 </script>
 
-<button on:click={() => goto('/api/user')}> goto api route from client: goto('/api/user')</button>
+<button on:click={() => goto('/redirect')}> goto page that redirects to external url: goto('/redirect') (debugger error)</button>
 
-<button on:click={() => goto('/sub')}> goto sub route: goto('/sub')</button>
+<br />
+
+<button on:click={() => window.location.href = '/redirect'}> window.location.href to page that redirect to external url: goto('/redirect') (debugger error)</button>
